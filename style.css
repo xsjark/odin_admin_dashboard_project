@@ -30,6 +30,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    font-family: "Roboto Condensed", Impact, "Franklin Gothic Bold", sans-serif;
+
 }
 ol, ul {
 	list-style: none;
@@ -108,8 +110,32 @@ table {
 }
 #navigation {
     display: grid;
-    grid-template-rows: 100px auto auto;
+    grid-template-rows: 50px 145px auto;
+    background-color: #1992D4;
+    color: white;
+    padding: 10px;
+}
+#navigation-main-menu, #navigation-secondary-menu {
+    margin: 0 5px;
+    padding: 25px 0;
+}
+#logo {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 50px auto;
+    
+}
+.bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 3px;
+}
 
+svg {
+    height: 100%; 
+    width: auto;
+    fill: white
 }
 #header {
     display: grid;
