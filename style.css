@@ -110,14 +110,34 @@ table {
 }
 #navigation {
     display: grid;
-    grid-template-rows: 50px 145px auto;
+    grid-template-rows: 50px 340px auto;
     background-color: #1992D4;
     color: white;
-    padding: 16px;
+    padding: 16px 16px 0 16px;
 }
-#navigation-main-menu, #navigation-secondary-menu {
-    margin: 0px 5px;
+#navigation-main-menu {
+    margin-top: 22px;
+    margin-left: 6px;
     padding: 25px 0;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 1fr;
+    gap: 5px;
+    font-size: 18px;
+    font-weight: 900;
+}
+#navigation-secondary-menu {
+    margin: 0px 6px;
+    padding: 25px 0;
+    display: grid;
+    grid-template-rows: repeat(3, 30px);
+    grid-template-columns: 1fr;
+    gap: 13px;
+    font-size: 18px;
+    font-weight: 900;
+}
+#navigation-main-menu > span > i, #navigation-secondary-menu > span > i {
+    margin-right:30px
 }
 #logo {
     display: grid;
