@@ -54,9 +54,9 @@ table {
     grid-template-columns: 277px auto;
     height: 100vh
 }
-#trending > div, #side > div, #announcements * {
+/* #trending > div, #side > div, #announcements * {
     border: solid
-}
+} */
 #navigation {
     grid-row: 1/3;
     grid-column: 1/2;
@@ -95,14 +95,15 @@ table {
     border-left: 10px solid #F0B429;
     border-radius: 10px;
     background-color: white;
-    box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 50%)
+    box-shadow: 0px 2px 5px 0px #d2d2d2;
 }
 .project-card-title {
     font-size: 16px;
     font-weight: 900
 }
 .project-card-text {
-    font-size: 15px
+    font-size: 15px;
+    color: #636363;
 }
 #project-card-actions {
     display: flex;
@@ -115,25 +116,73 @@ table {
     display: grid;
     grid-template-columns: 300px;
     grid-auto-rows: 1fr;
-    grid-gap: 10px;
+    grid-gap: 20px;
+    padding-top: 30px;
+    padding-left: 5px;
 }
-#side > div {
-    padding: 10px
+.side-item-wrapper {
+    width:  100px;
+    width: 260px
 }
 .side-title {
     margin-bottom: 10px;
+    font-weight: 900;
 }
 #announcements {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3,1fr);
-    height: calc(100% - 25px)
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: white;
+    height: 300px;
+    justify-content: space-evenly;
+    padding: 10px 25px;
+    box-shadow: 0px 2px 5px 0px #d2d2d2;
+
+}
+#announcements > div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 22px 7px;
+}
+#announcements > div:not(:last-child) {
+    border-bottom: 0.5px solid #d2d2d2;
+}
+.announcement-title {
+    font-size: 13px;
+    font-weight: 900;
+}
+.announcement-text {
+    font-size: 13px;
+    color: #636363;
 }
 #trending {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4,1fr);
-    height: calc(100% - 25px)
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: white;
+    height: 300px;
+    justify-content: space-evenly;
+    padding: 0px 25px;
+    box-shadow: 0px 2px 5px 0px #d2d2d2;
+}
+.trending-item {
+    display: flex;
+}
+.trending-item-body {
+    margin-left: 20px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.trending-item-author {
+    font-size: 13px
+}
+.trending-item-description {
+    font-size: 13px;
+    color: #636363;
 }
 #navigation {
     display: grid;
