@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">    <title>Document</title>
 </head>
 <body>
     <div class="container">
@@ -38,16 +38,36 @@
             </div>
         </div>
         <div id="header">
-            <div id="search">search bar</div>
-            <div id="name">Morgan Oakley</div>
-            <div id="avatar">avatar</div>
-            <div id="notifications">notifications</div>
-            <div id="bigAvatar">bigavatar</div>
-            <div id="greeting">greeting</div>
+            <div id="search" class="center">
+                <form class="example" action="action_page.php">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <input type="text" placeholder="Search.." name="search">
+                  </form>
+            </div>
+            <div id="name" class="center">Morgan Oakley</div>
+            <div id="small-avatar" class="center">
+                <img src="smiley.jpeg" class="small-avatar"/>
+            </div>
+            <div id="notifications" class="center"><i class="far fa-bell"></i></i></div>
+            <div id="big-avatar">
+                <div id="avatar" class="center">
+                    <img src="smiley.jpeg" class="big-avatar"/>
+                </div>
+            </div>
+            <div id="greeting" class="column">
+                <p>Hi there,</p>
+                <p>Morgan Oakley (@morgan)</p>
+            </div>
             <div id="actions">
-                <div id="new">new</div>
-                <div id="upload">upload</div>
-                <div id="share">share</div>                
+                <div id="new" class="center">
+                    <button class="primary-button">New</button>
+                </div>
+                <div id="upload" class="center">
+                    <button class="primary-button">Upload</button>
+                </div>
+                <div id="share" class="center">
+                    <button class="primary-button">Share</button>
+                </div>                
             </div>
         </div>
         <div id="body">
